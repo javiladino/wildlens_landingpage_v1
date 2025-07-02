@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WildLens – Cartographions la biodiversité</title>
+  <!-- Tailwind via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Inter font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --beige:#fef8e5;--brown:#3a2d1c;--green:#0d4c45;
+    }
+    body{font-family:'Inter',sans-serif;background:var(--beige);color:var(--brown)}
+    .btn-primary{background:var(--green);color:#fff;padding:.75rem 1.75rem;border-radius:9999px;transition:background .3s}
+    .btn-primary:hover{background:#083832}
+  </style>
+</head>
+<body>
+  <!-- Barre de navigation -->
+  <header class="w-full sticky top-0 bg-[#30C48D] z-50 shadow-sm">
+    <div class="max-w-6xl mx-auto flex items-center justify-between py-4 px-6">
+      <div class="flex items-center gap-2">
+        <img src="logo_blanc.png" alt="Logo WildLens" class="h-14 w-auto" />
+        <!--<span class="font-bold text-lg text-[var(--green)]">WILDLENS</span> -->
+      </div>
+      <nav class="hidden md:flex gap-8 font-semibold">
+        <a href="#hero" class="hover:text-[var(--beige)]">Accueil</a>
+        <a href="#tech" class="hover:text-[var(--beige)]">Technologie</a>
+        <a href="#benef" class="hover:text-[var(--beige)]">Bénéfices</a>
+        <a href="#cta" class="hover:text-[var(--beige)]">Participer</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Héro -->
+  <section id="hero" class="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center gap-10 px-6 py-16">
+    <div class="flex-1 space-y-6">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-[var(--green)]">Cartographions la biodiversité</h1>
+      <p class="text-lg">Boostez la science et la conservation en documentant les empreintes animales grâce à une IA avancée.</p>
+      <a href="#cta" class="btn-primary inline-block">Commencer maintenant</a>
+    </div>
+    <div class="flex-1 flex justify-center">
+      <img src="hero.png" alt="Illustration WildLens" class="max-w-xs md:max-w-md" />
+    </div>
+  </section>
+
+  <!-- Section technologie -->
+  <section id="tech" class="bg-white py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Technologie</h2>
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <!-- IA -->
+        <div class="space-y-4 order-2 md:order-1">
+          <h3 class="text-3xl font-semibold">Identification instantanée par IA</h3>
+          <p class="text-lg">Notre modèle PyTorch reconnaît plus de 20 espèces avec une précision supérieure à 90&nbsp;% et s'améliore chaque jour grâce à vos contributions.</p>
+        </div>
+        <img src="ia_identification2.png" alt="IA 92 %" class="rounded-lg shadow-lg order-1 md:order-2" />
+
+        <!-- Données ouvertes -->
+        <img src="donnes_ouv_2.png" alt="Données ouvertes" class="rounded-lg shadow-lg" />
+        <div class="space-y-4">
+          <h3 class="text-3xl font-semibold">Données ouvertes pour la recherche</h3>
+          <p class="text-lg">Les observations validées sont publiées sous licence CC‑BY‑SA et accessibles via une API pour soutenir chercheurs, ONG et décideurs publics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section bénéfices -->
+  <section id="benef" class="py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-12">Pourquoi rejoindre WildLens&nbsp;?</h2>
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h4 class="font-semibold text-xl mb-2">Soutenir la conservation</h4>
+          <p>Chaque empreinte documentée aide à protéger des espèces menacées et leurs habitats.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h4 class="font-semibold text-xl mb-2">Contribuer à la science citoyenne</h4>
+          <p>Participez à un projet ouvert et pédagogique : vos données alimentent la recherche mondiale.</p>
+        </div>
+        <div class="bg-white p-6 rounded-lg shadow">
+          <h4 class="font-semibold text-xl mb-2">Accès à tous</h4>
+          <p>Interface simple, multilingue et responsive pour mobiles, tablettes et ordinateurs.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <section id="cta" class="bg-[var(--green)] text-white py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+  <!-- CTA -->
+        <img src="footer2.png" alt="Données ouvertes" class="rounded-lg shadow-lg" />
+        <div class="max-w-3xl mx-auto text-center px-6 space-y-6">
+        <h2 class="text-3xl font-bold">Participez à la cartographie de la biodiversité</h2>
+        <p class="text-lg">Téléchargez vos photos d'empreintes, validez les observations et aidez-nous à créer la plus grande base de données d'empreintes animales.</p>
+        <a href="#" class="bg-white text-[var(--green)] font-semibold py-3 px-8 rounded-full inline-block">Je m'inscris</a>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-8 text-center text-sm text-gray-600">
+    © 2025 WildLens · Code open-source · Contact : info@wildlens.org
+  </footer>
+</body>
+</html>
